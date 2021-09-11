@@ -1,0 +1,21 @@
+$colors: (
+  'primary': #ffffff,
+  'secondary': #000000,
+  'neutral': #907e82,
+  'decorative': #d41443,
+  'decorative-secondary': #ffa5ba,
+  'bg-primary': #fff5f6,
+  'bg-secondary': #ffb8ca,
+  'bg-burger-menu': #e17992,
+  'accent-color-first': #f0d1a5,
+  'accent-color-second': #c2e297,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+:root {
+  --main-font: 'DM Sans', sans-serif;
+  --secondary-font: 'Titan One', cursive;
+}

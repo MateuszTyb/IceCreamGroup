@@ -1,0 +1,24 @@
+.about{
+    
+background-color: getColor(bg-secondary);
+
+
+&__label{
+font-family: var(--secondary-font);
+font-size: 18px;
+line-height: 1.167;
+text-align: center;
+text-transform: uppercase;
+color: getColor(decorative-secondary);
+}
+
+&__secondary-header{
+font-family: var(--secondary-font);
+font-size: 34px;
+line-height: 1.147;
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: getColor(decorative);
+}
+}
