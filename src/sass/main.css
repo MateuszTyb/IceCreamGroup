@@ -220,6 +220,17 @@ button {
           transform: scaleY(0);
 }
 
+.header-mobile + .is-open {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: -webkit-transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .header-mobile.is-open {
   position: absolute;
   padding: 20px;
@@ -237,6 +248,8 @@ button {
   background-color: #e17992;
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
+  -webkit-transition: all;
+  transition: all;
   -webkit-transform-origin: top;
           transform-origin: top;
   -webkit-transition: -webkit-transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -388,5 +401,41 @@ button {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.backdrop {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  opacity: 1;
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*# sourceMappingURL=main.css.map */
