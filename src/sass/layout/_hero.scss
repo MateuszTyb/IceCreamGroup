@@ -33,23 +33,21 @@
     text-align: center;
   }
 
-&__img-ice{
-  z-index: 12;
-  position: absolute;
-  bottom: 0px;
-  right: 32px;
-  width: 171px;
-  height: 410px;
+  &__img-ice {
+    z-index: 12;
+    position: absolute;
+    bottom: 0px;
+    right: 32px;
+    width: 171px;
+    height: 410px;
 
-& > * {
-    z-index: 100;
-}
-
-
-}
-&__decorator{
+    & > * {
+      z-index: 100;
+    }
+  }
+  &__decorator {
     z-index: 11;
-    content: "";
+    content: '';
     position: absolute;
     width: 343px;
     height: 343px;
