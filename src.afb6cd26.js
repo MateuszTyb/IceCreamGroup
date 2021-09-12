@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"/home/runner/work/IceCreamGroup/IceCreamGroup/src/images/header-icons/check.svg":[["check.a762cf20.svg","C5rx"],"C5rx"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/src.4e5a8d7a.js.map
+//# sourceMappingURL=/src.afb6cd26.js.map
