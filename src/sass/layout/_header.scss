@@ -31,14 +31,27 @@
       height: 44px;
       margin-left: 30px;
       border-radius: 22px;
+      transition: all;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
       &:hover,
       &:focus {
         background-color: getColor(button-hover);
+        transition: all;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       }
     }
   }
+
+  &__btn-icon {
+    margin-left: 12px;
+  }
+
   &__buttons {
     display: flex;
+    align-items: center;
   }
 
   &__logo-img {
@@ -49,6 +62,8 @@
 
   &__open {
     position: relative;
+    width: 20px;
+    height: 12px;
     margin: 0;
     padding: 0;
     border: none;
@@ -60,8 +75,8 @@
   }
 
   &__open-icon {
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 12px;
     color: getColor('decorative');
     fill: getColor('decorative');
   }
@@ -77,10 +92,16 @@
     font-weight: 700;
     font-size: 16px;
     color: getColor(primary);
+    transition: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
       color: getColor(decorative);
+      transition: all;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
 
@@ -92,20 +113,28 @@
 }
 .header-mobile {
   display: none;
-
-&.is-open {
-  display: initial;
-  position: absolute;
-  padding: 20px;
-  width: 250px;
-  height: 100vh;
+  width: 0px;
+  height: 0px;
   top: 0;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  background-color: getColor(bg-burger-menu);
-  }
+  right: 0px;
+  transform: scaleY(0);
 
+
+  
+  &.is-open {
+    position: absolute;
+    padding: 20px;
+    width: 250px;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: getColor(bg-burger-menu);
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
   &__btn {
     position: relative;
@@ -119,25 +148,33 @@
     display: inherit;
     width: 100%;
     height: 44px;
-    margin-top: 60px;
+    margin-top: 40px;
     margin-bottom: 32px;
     border-radius: 22px;
+    transition: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:after
-    {
-    content: "";
-    position: absolute;
-    width: 250px;
-    bottom: -19px;
-    left: -20px;
-    background-color: #e18398;
-    border: 1px solid #e18398;
+    @media screen and (min-width: 768px) {
+      width: 168px;
+      align-self: center;
+    }
 
+    &:after {
+      content: '';
+      position: absolute;
+      width: 250px;
+      bottom: -19px;
+      background-color: #e18398;
+      border: 1px solid #e18398;
     }
 
     &:hover,
     &:focus {
       background-color: getColor(button-hover);
+      transition: all;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
 
@@ -148,18 +185,16 @@
     margin: 0;
     padding: 0;
     border: none;
+    color: getColor(primary);
+    fill: getColor(primary);
     background-color: getColor(bg-burger-menu);
-
-    @media screen and (min-width: 1200px) {
-      display: none;
-    }
   }
 
   &__close-icon {
-    width: 40px;
-    height: 40px;
-    color: getColor('decorative');
-    fill: getColor('decorative');
+    width: 14px;
+    height: 14px;
+    color: solid getColor('decorative');
+    fill: solid getColor('decorative');
   }
 
   &__link {
@@ -167,22 +202,26 @@
     font-size: 16px;
     color: getColor(primary);
     position: relative;
+    transition: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:after
-    {
-    content: "";
-    position: absolute;
-    width:250px;
-    bottom: -11px;
-    left: -20px;
-    background-color: #e18398;
-    border: 1px solid #e18398;
-  
+    &:after {
+      content: '';
+      position: absolute;
+      width: 250px;
+      bottom: -11px;
+      left: -20px;
+      background-color: #e18398;
+      border: 1px solid #e18398;
     }
 
     &:hover,
     &:focus {
       color: getColor(decorative);
+      transition: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
 
@@ -190,7 +229,5 @@
     display: flex;
     flex-direction: column;
     row-gap: 22px;
-
   }
 }
-
