@@ -2,5 +2,12 @@ body {
   font-family: 'DM Sans', sans-serif;
   color: getColor('secondary');
   background-color: getColor('primary');
-  margin: 0px;
+  font-family: 'DM Sans', sans-serif;
+  margin: 0px auto;
+  max-width: 1600px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  overflow-x: hidden;
 }
