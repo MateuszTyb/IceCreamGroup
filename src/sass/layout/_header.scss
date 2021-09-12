@@ -6,6 +6,7 @@
   justify-content: space-between;
   padding: 6px 20px;
   position: relative;
+  z-index: 101;
 
   @media screen and (min-width: 768px) {
     padding: 37px 34px 6px;
@@ -118,6 +119,7 @@
   top: 0;
   right: 0px;
   transform: scaleY(0);
+  
 
   & + .is-open{
     transform: scaleY(0);
