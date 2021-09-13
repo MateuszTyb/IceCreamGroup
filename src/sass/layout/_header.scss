@@ -51,8 +51,10 @@
   }
 
   &__buttons {
+    position: relative;
     display: flex;
     align-items: center;
+    z-index: 121;
   }
 
   &__logo-img {
@@ -63,6 +65,7 @@
 
   &__open {
     position: relative;
+    z-index: 121;
     width: 20px;
     height: 12px;
     margin: 0;
