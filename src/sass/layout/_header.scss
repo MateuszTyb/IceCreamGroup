@@ -6,7 +6,6 @@
   justify-content: space-between;
   padding: 6px 20px;
   position: relative;
-  z-index: 101;
 
   @media screen and (min-width: 768px) {
     padding: 37px 34px 6px;
@@ -118,21 +117,19 @@
     column-gap: 35px;
   }
 }
-.header-mobile{
+.header-mobile {
   display: none;
   width: 0px;
   height: 0px;
   top: 0;
   right: 0px;
   transform: scaleY(0);
-  
 
-  & + .is-open{
+  & + .is-open {
     transform: scaleY(0);
     transform-origin: top;
     transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-
 
   &.is-open {
     position: absolute;
