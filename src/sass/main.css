@@ -1035,4 +1035,39 @@ button {
 .modal-check__checkbox:hover {
   border-color: #d41443;
 }
+
+.gallery {
+  max-width: 1920px;
+  height: 122px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff5f6), to(#ffffff));
+  background-image: linear-gradient(to bottom, #fff5f6, #ffffff);
+  margin-top: 97px;
+}
+
+.gallery__image {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .gallery {
+    height: 264px;
+    margin-top: 140px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery {
+    height: 430px;
+    margin-top: 139px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
