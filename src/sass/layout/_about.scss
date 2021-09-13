@@ -1,7 +1,16 @@
 .about{
-    
-background-color: getColor(bg-secondary);
+background-image: 
+url("/src/images/about/bg-mobile.png");
+background-color: getColor(bg-primary);
+background-repeat: no-repeat;
+background-size: contain;
+background-position: 0 775px;
+  
 
+&__container{
+    display: flex;
+    flex-direction: column;
+}
 
 &__label{
 font-family: var(--secondary-font);
@@ -10,6 +19,8 @@ line-height: 1.167;
 text-align: center;
 text-transform: uppercase;
 color: getColor(decorative-secondary);
+margin-bottom: 15px;
+padding-top: 125px;
 }
 
 &__secondary-header{
@@ -20,5 +31,164 @@ text-align: center;
 letter-spacing: 0.04em;
 text-transform: uppercase;
 color: getColor(decorative);
+max-width: 200px;
+align-self: center;
+
+
 }
+&__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+&__picture{
+    margin-top: 32px;
+}
+&__how-is-made{
+max-width: 220px;
+}
+
+&__description{
+font-weight: 500;
+font-size: 12px;
+line-height: 1.583;
+color: getColor(secondary);
+margin-top: 46px;
+margin-bottom: 47px;
+}
+
+&__undertitle{
+font-weight: 500;
+font-size: 12px;
+line-height: 1.583;
+color: getColor(neutral);
+margin-bottom: 47px;
+}
+
+&__modal-btn{
+display: flex;
+background: getColor(primary);
+border-radius: 22px;
+border: none;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.286;
+color: getColor(decorative);
+padding: 0 27px;
+min-height: 44px;
+align-items: center;
+
+
+}
+&__arrow-icon{
+    margin-left: 14px;
+}
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx){
+  .about{
+    background-image:
+    url("/src/images/about/bg-mobile2x.png");
+}
+}
+
+@media screen and(min-width: 768px){
+    .about{
+    
+        &__label{
+        padding-top: 130px;
+        }
+
+        &__secondary-header{
+            min-width: 429px;
+        }
+
+        &__list{
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        &__picture{
+            margin-right: 17px;
+            margin-top: 50px;
+        }
+
+        &__how-is-made{
+        max-width: 340px;
+        }
+
+        &__description{
+            font-size: 14px;
+            line-height: 1.76;
+            margin-top: 100px;
+            margin-bottom: 49px;
+        }
+
+        &__undertitle{
+            font-size: 14px;
+            line-height: 1.786;
+            margin-bottom: 62px;
+            letter-spacing: 0.04em;
+        }
+
+        &__modal-btn{
+            font-size: 16px;
+            line-height: 1.312;
+        }
+
+
+
+    }
+}
+    @media screen and(min-width: 1280px) {
+    .about{
+    background-image: 
+    url("/src/images/about/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 300px;
+    
+        &__label{
+        padding-top: 125px;
+        }
+
+        &__picture{
+        margin-right: 74px;
+        margin-top: 55px;
+        }
+
+        &__how-is-made{
+        min-width: 463px;
+        }
+
+        &__description{
+       font-size: 16px;
+       line-height: 1.75; 
+       letter-spacing: 0.04em;
+       margin-top: 106px;
+       margin-bottom: 35px;
+        }
+
+        &__undertitle{
+       line-height: 1.923;
+       margin-bottom: 45px;
+        }
+
+
+
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx){
+  .about{
+    background-image:
+    url("/src/images/about/bg-desktop2x.png");
+  }
 }
