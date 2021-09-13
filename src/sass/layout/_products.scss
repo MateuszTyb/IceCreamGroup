@@ -70,6 +70,7 @@
     }
   }
 }
+
 .products__card {
   min-height: 484px;
   max-width: 280px;
@@ -122,7 +123,12 @@
   }
 
   &-btn {
-    padding-bottom: 41px;
+    background-image: url(/images/products/mobile/arrow-right.png);
+  background-color: unset;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 0;
   }
 }
 
