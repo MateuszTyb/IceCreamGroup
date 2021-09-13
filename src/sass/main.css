@@ -975,7 +975,21 @@ button {
 }
 
 .about {
-  background-color: #ffb8ca;
+  background-image: url("/src/images/about/bg-mobile.png");
+  background-color: #fff5f6;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 775px;
+}
+
+.about__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .about__label {
@@ -985,6 +999,8 @@ button {
   text-align: center;
   text-transform: uppercase;
   color: #ffa5ba;
+  margin-bottom: 15px;
+  padding-top: 125px;
 }
 
 .about__secondary-header {
@@ -995,6 +1011,156 @@ button {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
+  max-width: 200px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.about__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__picture {
+  margin-top: 32px;
+}
+
+.about__how-is-made {
+  max-width: 220px;
+}
+
+.about__description {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.583;
+  color: #000000;
+  margin-top: 46px;
+  margin-bottom: 47px;
+}
+
+.about__undertitle {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.583;
+  color: #907e82;
+  margin-bottom: 47px;
+}
+
+.about__modal-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #ffffff;
+  border-radius: 22px;
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.286;
+  color: #d41443;
+  padding: 0 27px;
+  min-height: 44px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__arrow-icon {
+  margin-left: 14px;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .about {
+    background-image: url("/src/images/about/bg-mobile2x.png");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about__label {
+    padding-top: 130px;
+  }
+  .about__secondary-header {
+    min-width: 429px;
+  }
+  .about__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .about__picture {
+    margin-right: 17px;
+    margin-top: 50px;
+  }
+  .about__how-is-made {
+    max-width: 340px;
+  }
+  .about__description {
+    font-size: 14px;
+    line-height: 1.76;
+    margin-top: 100px;
+    margin-bottom: 49px;
+  }
+  .about__undertitle {
+    font-size: 14px;
+    line-height: 1.786;
+    margin-bottom: 62px;
+    letter-spacing: 0.04em;
+  }
+  .about__modal-btn {
+    font-size: 16px;
+    line-height: 1.312;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about {
+    background-image: url("/src/images/about/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 300px;
+  }
+  .about__label {
+    padding-top: 125px;
+  }
+  .about__picture {
+    margin-right: 74px;
+    margin-top: 55px;
+  }
+  .about__how-is-made {
+    min-width: 463px;
+  }
+  .about__description {
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.04em;
+    margin-top: 106px;
+    margin-bottom: 35px;
+  }
+  .about__undertitle {
+    line-height: 1.923;
+    margin-bottom: 45px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .about {
+    background-image: url("/src/images/about/bg-desktop2x.png");
+  }
 }
 
 .visually-hidden {

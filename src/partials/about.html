@@ -4,7 +4,9 @@
   <p class="about__label">Tradition and love</p>
   <h2 class="about__secondary-header">How it's made?</h2>
 
-<picture>
+ <ul class="about__list">
+<li class="about__picture">
+  <picture>
   <source
     srcset="
       /src/images/about/cow-desktop.png 1x,
@@ -26,6 +28,8 @@
     alt="Cow and a jug of milk"
   />
   </picture>
+  </li>
+  <li class="about__how-is-made">
 
   <p class="about__description">
     Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem
@@ -36,11 +40,16 @@
     Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in
     imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
     Cras massa nibh, tincidunt.<br/>
-  </br>
+  <br/>
     Aliquam erat volutpat. Aenean accumsan.
   </p>
-  <button class="about__modal" type="modal">Read more</button>
-  </container>
+  <button class="about__modal-btn" type="button">Read more
+    <img class="about__arrow-icon"
+    src="/src/images/about/arrow-icon.svg"
+    alt="arrow icon">
+  </button>
+  </li>
+</ul> 
   </div>
 </section>
 
