@@ -1721,7 +1721,7 @@ button {
   height: 40px;
   background-image: url("../images/customer/customers-bg.png");
   background-repeat: no-repeat;
-  margin-left: -40px;
+  margin-left: -35px;
   margin-top: -15px;
   z-index: -1;
 }
@@ -1801,7 +1801,7 @@ button {
     line-height: 2.143;
   }
   .customer__item-description::before {
-    margin-left: -40px;
+    margin-left: -46px;
     margin-top: -17px;
   }
   .customer__item-header {
