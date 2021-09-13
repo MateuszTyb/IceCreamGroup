@@ -3,9 +3,12 @@
 
 @import './base/base';
 @import './base/reset';
+@import './base/animation';
+
 
 @import './layout/header';
 @import './layout/hero';
+@import './layout/products';
 @import './layout/about';
 @import './layout/modal';
 @import './layout/gallery';
