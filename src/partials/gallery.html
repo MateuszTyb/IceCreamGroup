@@ -1,0 +1,25 @@
+<section class="gallery">
+  <div class="container">
+    <picture class="gallery__image">
+      <source
+        srcset="
+        ./images/gallery/desktop.png 1x, 
+        ./images/gallery/desktop@2x.png 2x"
+        media="(min-width:1200px)"
+      />
+      <source
+        srcset="
+        ./images/gallery/tablet.png 1x, 
+        ./images/gallery/tablet@2x.png 2x"
+        media="(min-width:768px)"
+      />
+      <img
+        src="
+        ./images/gallery/mobile.png"
+        srcset="
+        ./images/gallery/mobile@2x.png 2x"
+        alt="gallery"
+      />
+    </picture>
+  </div>
+</section>
