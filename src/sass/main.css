@@ -1719,7 +1719,7 @@ button {
   display: inline-block;
   width: 54px;
   height: 40px;
-  background-image: url("./images/customer/customers-bg.png");
+  background-image: url("../images/customer/customers-bg.png");
   background-repeat: no-repeat;
   margin-left: -40px;
   margin-top: -15px;
