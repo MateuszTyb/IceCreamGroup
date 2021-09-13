@@ -11,7 +11,7 @@
     padding: 37px 34px 6px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     padding: 37px 115px 6px 46px;
   }
 
@@ -72,9 +72,9 @@
     margin: 0;
     padding: 0;
     border: none;
-    background-color: getColor('bg-secondary');
+    background-color: transparent;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       display: none;
     }
   }
@@ -90,7 +90,7 @@
 .header-nav {
   display: none;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     display: inherit;
   }
 
@@ -115,6 +115,8 @@
     display: flex;
     align-items: center;
     column-gap: 35px;
+    position: relative;
+    z-index: 200;
   }
 }
 .header-mobile {
@@ -132,6 +134,7 @@
   }
 
   &.is-open {
+    z-index: 201;
     position: absolute;
     padding: 20px;
     width: 250px;

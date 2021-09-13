@@ -175,7 +175,7 @@ button {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .header {
     padding: 37px 115px 6px 46px;
   }
@@ -254,10 +254,10 @@ button {
   margin: 0;
   padding: 0;
   border: none;
-  background-color: #ffb8ca;
+  background-color: transparent;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .header__open {
     display: none;
   }
@@ -275,7 +275,7 @@ button {
   display: none;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .header-nav {
     display: inherit;
   }
@@ -312,6 +312,8 @@ button {
           align-items: center;
   -webkit-column-gap: 35px;
           column-gap: 35px;
+  position: relative;
+  z-index: 200;
 }
 
 .header-mobile {
@@ -336,6 +338,7 @@ button {
 }
 
 .header-mobile.is-open {
+  z-index: 201;
   position: absolute;
   padding: 20px;
   width: 250px;
