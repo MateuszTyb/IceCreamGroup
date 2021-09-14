@@ -1135,6 +1135,12 @@ button {
 
 .about {
   background-color: #fff5f6;
+
+  width: 100%;
+  max-width: 1280px;
+  min-width: 320px;
+  margin: 0 auto;
+
 }
 
 .about__container {
@@ -1190,6 +1196,9 @@ button {
 
 .about__picture {
   margin-top: 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .about__how-is-made {
@@ -1235,7 +1244,16 @@ button {
   margin-left: 14px;
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media screen and (max-width: 767px) {
+  .about {
+    background-image: url("/src/images/about/bg-mobile.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 780px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (max-width: 767px), screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .about {
     background-image: url("/src/images/about/bg-mobile2x.png");
   }
@@ -1312,7 +1330,7 @@ button {
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px), screen and (min-resolution: 192dpi) and (min-width: 1280px), screen and (min-resolution: 2dppx) and (min-width: 1280px) {
   .about {
     background-image: url("/src/images/about/bg-desktop2x.png");
   }
