@@ -1,6 +1,6 @@
 .hero {
-  width: auto;
   display: flex;
+  width: auto;
   height: 440px;
   position: relative;
   background-color: getColor(bg-secondary);
@@ -10,12 +10,13 @@
 
   @media screen and (min-width: 768px) {
     height: 306px;
-    padding: 11px 34px;
+    padding: 11px 42px 0px 34px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     height: 572px;
-    padding: 11px 34px;
+    padding: 11px 115px;
+    max-width: 1280px;
   }
 
   &__main {
@@ -41,8 +42,8 @@
       line-height: 25px;
     }
 
-    @media screen and (min-width: 1200px) {
-      margin: 78px 0px 25px 81px;
+    @media screen and (min-width: 1280px) {
+      margin: 78px 0px 25px 0px;
       font-size: 38px;
       line-height: 43px;
     }
@@ -59,7 +60,7 @@
       line-height: 30px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       font-size: 58px;
       line-height: 52px;
     }
@@ -76,7 +77,7 @@
     align-items: center;
     text-align: center;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       font-size: 14px;
       line-height: 18px;
       height: 40px;
@@ -91,9 +92,7 @@
     column-gap: 8px;
     z-index: 17;
 
-    @media screen and (min-width: 1200px) {
-      margin-left: 81px;
-      margin-bottom: 20px;
+    @media screen and (min-width: 1280px) {
       column-gap: 15px;
     }
   }
@@ -112,6 +111,14 @@
       right: 247px;
       width: 143px;
       height: 336px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      z-index: 102;
+      bottom: 0px;
+      right: 450px;
+      width: 236px;
+      height: 557px;
     }
   }
   &__decorator {
@@ -133,6 +140,14 @@
       width: 322px;
       height: 322px;
     }
+
+    @media screen and (min-width: 1280px) {
+      z-index: 101;
+      bottom: 75px;
+      right: 267px;
+      width: 538px;
+      height: 538px;
+    }
   }
 
   &__img-milk,
@@ -153,7 +168,7 @@
       bottom: 28px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       width: 188px;
       height: 191px;
       left: 77px;
@@ -173,7 +188,7 @@
       left: 154px;
       bottom: 59px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       font-size: 14px;
       line-height: 20px;
       width: 200px;
@@ -194,17 +209,11 @@
       bottom: 34px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       width: 26px;
       height: 26px;
       left: 295px;
       bottom: 56px;
-    }
-  }
-
-  &__event-icon {
-    @media screen and (min-width: 1200px) {
-      width: 144%;
     }
   }
   &__img-girl {
@@ -217,6 +226,13 @@
       bottom: 0;
       z-index: 111;
     }
+
+    @media screen and (min-width: 1280px) {
+      width: 293px;
+      height: 232px;
+      right: 109px;
+      bottom: 0px;
+    }
   }
 
   &__locals-list {
@@ -225,6 +241,10 @@
     @media screen and (min-width: 768px) {
       display: initial;
     }
+
+    @media screen and (min-width: 1280px) {
+      margin-top: 77px;
+    }
   }
 
   &__locals-item {
@@ -232,45 +252,67 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     position: relative;
-    z-index: 33;
 
-    &::after {
-      content: ' ';
-      display: block;
-      position: absolute;
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      color: getColor(primary);
-      background-color: getColor(primary);
-      top: 2px;
-      right: -10px;
-      z-index: 30;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 38px;
     }
+
   }
 
   &__locals-header {
+    position: sticky;
     font-family: var(--secondary-font);
     font-size: 28px;
     line-height: 32px;
+    font-weight: 400;
     color: getColor(decorative);
+    z-index: 100;
+
+    @media screen and (min-width: 1280px) {
+      font-size: 46px;
+      line-height: 53px;
+    }
   }
 
   &__locals-subscribe {
+    text-transform: lowercase;
     font-family: var(--primaty-font);
     font-style: normal;
     font-weight: normal;
     font-size: 8px;
     line-height: 10px;
     color: getColor(primary);
+
+    @media screen and (min-width: 1280px) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    &:after {
+      content: ' ';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      color: getColor(primary);
+      background-color: getColor(primary);
+      top: -1px;
+      right: -10px;
+      z-index: 50;
+
+      @media screen and (min-width: 1280px) {
+        width: 30px;
+        height: 30px;
+      }
+    }
   }
 }
-.products {
+.product-btn {
   color: getColor(primary);
   background-color: getColor(decorative);
 }
 
-.made {
+.made-btn {
   color: getColor(decorative);
   background-color: getColor(primary);
 

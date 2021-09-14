@@ -1,19 +1,12 @@
 .about{
-<<<<<<< Updated upstream
-background-image: 
-url("/src/images/about/bg-mobile.png");
-background-color: getColor(bg-primary);
-background-repeat: no-repeat;
-background-size: contain;
-background-position: 0 775px;
-  
-=======
+
 background-color: getColor(bg-primary);
 width: 100%;
 max-width: 1280px;
 min-width: 320px;
 margin: 0 auto;
->>>>>>> Stashed changes
+
+
 
 &__container{
     display: flex;
