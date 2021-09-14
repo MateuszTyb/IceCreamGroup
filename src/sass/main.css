@@ -1627,11 +1627,10 @@ button {
 }
 
 .gallery {
-  max-width: 1920px;
+  max-width: 100%;
   height: 122px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#fff5f6), to(#ffffff));
   background-image: linear-gradient(to bottom, #fff5f6, #ffffff);
-  margin-top: 97px;
 }
 
 .gallery__image {
@@ -1647,17 +1646,15 @@ button {
           justify-content: center;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .gallery {
     height: 264px;
-    margin-top: 140px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .gallery {
     height: 430px;
-    margin-top: 139px;
   }
 }
 
