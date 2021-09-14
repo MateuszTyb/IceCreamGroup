@@ -1,11 +1,6 @@
 .about{
-background-image: 
-url("/src/images/about/bg-mobile.png");
+    
 background-color: getColor(bg-primary);
-background-repeat: no-repeat;
-background-size: contain;
-background-position: 0 775px;
-  
 
 &__container{
     display: flex;
