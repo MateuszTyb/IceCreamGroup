@@ -1627,7 +1627,7 @@ button {
 }
 
 .gallery {
-  max-width: 100%;
+  max-width: 1280px;
   height: 122px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#fff5f6), to(#ffffff));
   background-image: linear-gradient(to bottom, #fff5f6, #ffffff);
