@@ -1627,8 +1627,15 @@ button {
 }
 
 .gallery {
+  max-width: 100%;
   max-width: 1280px;
   height: 122px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#fff5f6), to(#ffffff));
   background-image: linear-gradient(to bottom, #fff5f6, #ffffff);
 }
@@ -1638,12 +1645,6 @@ button {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
