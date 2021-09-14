@@ -1,10 +1,17 @@
 .about{
-    
+
 background-color: getColor(bg-primary);
+width: 100%;
+max-width: 1280px;
+min-width: 320px;
+margin: 0 auto;
+
+
 
 &__container{
     display: flex;
     flex-direction: column;
+    
 }
 
 &__label{
@@ -41,6 +48,7 @@ align-self: center;
 
 &__picture{
     margin-top: 32px;
+    align-items: center;
 }
 &__how-is-made{
 max-width: 220px;
@@ -83,9 +91,19 @@ align-items: center;
 }
 }
 
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx){
+@media screen and (max-width: 767px) {
+    .about{
+        background-image: 
+        url("/src/images/about/bg-mobile.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 0 780px;
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px){
   .about{
     background-image:
     url("/src/images/about/bg-mobile2x.png");
@@ -94,7 +112,6 @@ align-items: center;
 
 @media screen and(min-width: 768px){
     .about{
-    
         &__label{
         padding-top: 130px;
         }
@@ -140,7 +157,9 @@ align-items: center;
 
     }
 }
-    @media screen and(min-width: 1280px) {
+
+
+    @media screen and (min-width: 1280px) {
     .about{
     background-image: 
     url("/src/images/about/bg-desktop.png");
@@ -179,9 +198,9 @@ align-items: center;
     }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx){
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+  screen and (min-resolution: 192dpi) and (min-width: 1280px),
+  screen and (min-resolution: 2dppx) and (min-width: 1280px){
   .about{
     background-image:
     url("/src/images/about/bg-desktop2x.png");
