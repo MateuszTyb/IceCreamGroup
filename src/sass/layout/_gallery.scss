@@ -1,28 +1,27 @@
 .gallery {
-  max-width: 1920px;
+  max-width: 100%;
+  max-width: 1280px;
   height: 122px;
-  background-image: linear-gradient(to bottom, #fff5f6, #ffffff);
-  margin-top: 97px;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to top, getColor(primary) 73px, getColor(bg-primary) 49px);
 }
 
 .gallery__image {
-  width: 100%;
   height: auto;
   object-fit: cover;
-  display: flex;
-  justify-content: center;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .gallery {
     height: 264px;
-    margin-top: 140px;
+    background-image: linear-gradient(to top, getColor(primary) 158px, getColor(bg-primary) 106px);
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .gallery {
     height: 430px;
-    margin-top: 139px;
+    background-image: linear-gradient(to top, getColor(primary) 259px, getColor(bg-primary) 171px);
   }
 }
