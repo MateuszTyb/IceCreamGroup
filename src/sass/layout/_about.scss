@@ -73,7 +73,7 @@ margin-bottom: 47px;
 
 &__modal-btn{
 display: flex;
-background: getColor(primary);
+background-color: getColor(primary);
 border-radius: 22px;
 border: none;
 font-weight: 700;
@@ -83,6 +83,10 @@ color: getColor(decorative);
 padding: 0 27px;
 min-height: 44px;
 align-items: center;
+
+&:hover{
+background-color: getColor(button-hover);
+}
 
 
 }
@@ -114,10 +118,14 @@ align-items: center;
     .about{
         &__label{
         padding-top: 130px;
+        font-size: 30px;
+        line-height: 1.333;
         }
 
         &__secondary-header{
-            min-width: 429px;
+            min-width: 440px;
+            font-size: 48px;
+            line-height: 1.456;
         }
 
         &__list{
@@ -169,11 +177,19 @@ align-items: center;
     
         &__label{
         padding-top: 125px;
+        font-size: 30px;
+        line-height: 1.333;
         }
 
         &__picture{
         margin-right: 74px;
         margin-top: 55px;
+        }
+
+         &__secondary-header{
+        min-width: 534px;
+        font-size: 58px;
+        line-height: 1.138;
         }
 
         &__how-is-made{
