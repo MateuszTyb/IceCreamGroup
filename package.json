@@ -6,7 +6,7 @@
   "homepage": "https://github.com/MateuszTyb/IceCreamGroup",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html",
+    "build": "parcel build src/*.html --public-url /IceCreamGroup/",
     "predeploy": "npm run build -- --public-url /IceCreamGroup/",
     "deploy": "gh-pages -d dist"
   },
