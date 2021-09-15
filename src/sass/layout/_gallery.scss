@@ -4,11 +4,10 @@
   height: 122px;
   display: flex;
   justify-content: center;
-  background-image: linear-gradient(to bottom, getColor(bg-primary), getColor(primary));
+  background-image: linear-gradient(to top, getColor(primary) 73px, getColor(bg-primary) 49px);
 }
 
 .gallery__image {
-  width: 100%;
   height: auto;
   object-fit: cover;
 }
@@ -16,11 +15,13 @@
 @media screen and (min-width: 768px) {
   .gallery {
     height: 264px;
+    background-image: linear-gradient(to top, getColor(primary) 158px, getColor(bg-primary) 106px);
   }
 }
 
 @media screen and (min-width: 1280px) {
   .gallery {
     height: 430px;
+    background-image: linear-gradient(to top, getColor(primary) 259px, getColor(bg-primary) 171px);
   }
 }
