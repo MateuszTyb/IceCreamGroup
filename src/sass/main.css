@@ -1135,12 +1135,10 @@ button {
 
 .about {
   background-color: #fff5f6;
-
   width: 100%;
   max-width: 1280px;
   min-width: 320px;
   margin: 0 auto;
-
 }
 
 .about__container {
@@ -1226,7 +1224,7 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #ffffff;
+  background-color: #ffffff;
   border-radius: 22px;
   border: none;
   font-weight: 700;
@@ -1238,6 +1236,10 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.about__modal-btn:hover {
+  background-color: #ecebeb;
 }
 
 .about__arrow-icon {
@@ -1262,9 +1264,13 @@ button {
 @media screen and (min-width: 768px) {
   .about__label {
     padding-top: 130px;
+    font-size: 30px;
+    line-height: 1.333;
   }
   .about__secondary-header {
     min-width: 429px;
+    font-size: 48px;
+    line-height: 1.456;
   }
   .about__list {
     -webkit-box-orient: horizontal;
@@ -1309,10 +1315,17 @@ button {
   }
   .about__label {
     padding-top: 125px;
+    font-size: 30px;
+    line-height: 1.333;
   }
   .about__picture {
     margin-right: 74px;
     margin-top: 55px;
+  }
+  .about__secondary-header {
+    min-width: 534px;
+    font-size: 58px;
+    line-height: 1.138;
   }
   .about__how-is-made {
     min-width: 463px;
