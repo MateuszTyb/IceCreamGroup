@@ -1,0 +1,28 @@
+.gallery {
+  max-width: 1920px;
+  height: 122px;
+  background-image: linear-gradient(to bottom, #fff5f6, #ffffff);
+  margin-top: 97px;
+}
+
+.gallery__image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .gallery {
+    height: 264px;
+    margin-top: 140px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery {
+    height: 430px;
+    margin-top: 139px;
+  }
+}
