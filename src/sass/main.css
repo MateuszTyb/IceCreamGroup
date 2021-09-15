@@ -2458,7 +2458,7 @@ button {
 .contacts__button {
   width: 161px;
   height: 44px;
-  background-color: #d41342;
+  background-color: #d41443;
   border-radius: 22px;
   border-style: none;
   font-weight: 700;
@@ -2484,7 +2484,7 @@ button {
 
 .contacts__button--franchise {
   background-color: #ffffff;
-  color: #d41342;
+  color: #d41443;
 }
 
 .contacts__button-icon {

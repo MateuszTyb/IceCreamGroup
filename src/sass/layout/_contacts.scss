@@ -1,6 +1,6 @@
 .contacts {
   height: 1672px;
-  background-image: linear-gradient(to top, #fff5f6 1502px, #ffffff 170px);
+  background-image: linear-gradient(to top, getColor(bg-primary) 1502px, getColor(primary) 170px);
 }
 
 .contacts__grid {
@@ -16,7 +16,7 @@
   padding-top: 43px;
   padding-bottom: 43px;
   padding-left: 20px;
-  background-color: #ffffff;
+  background-color: getColor(primary);
   box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 
@@ -33,7 +33,7 @@
   width: 80px;
   height: 16px;
   margin-bottom: 25px;
-  background: #f0d1a5;
+  background: getColor(accent-color-first);
   border-radius: 4px;
   font-weight: 500;
   font-size: 12px;
@@ -42,12 +42,12 @@
   align-items: center;
   justify-content: center;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: getColor(primary);
   text-transform: uppercase;
 
   &--food-truck {
     width: 130px;
-    background: #c2e297;
+    background: getColor(accent-color-second);
   }
 }
 
@@ -57,7 +57,7 @@
   font-size: 12px;
   line-height: 1.833;
   letter-spacing: 0.04em;
-  color: #000000;
+  color: getColor(secondary);
 }
 
 .contacts__text {
@@ -65,7 +65,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
-  color: #907e82;
+  color: getColor(neutral);
   position: relative;
 
   &::after {
@@ -84,7 +84,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.833;
-  color: #000000;
+  color: getColor(secondary);
 }
 
 .contacts__hours {
@@ -92,7 +92,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.833;
-  color: #ffa5ba;
+  color: getColor(decorative-secondary);
 }
 
 .contacts__hours--underline {
@@ -114,7 +114,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
-  color: #907e82;
+  color: getColor(neutral);
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -127,7 +127,7 @@
 .contacts__button {
   width: 161px;
   height: 44px;
-  background-color: #d41342;
+  background-color: getColor(decorative);
   border-radius: 22px;
   border-style: none;
   font-weight: 700;
@@ -136,7 +136,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: getColor(primary);
   margin-right: auto;
   margin-left: auto;
 
@@ -145,8 +145,8 @@
   }
 
   &--franchise {
-    background-color: #ffffff;
-    color: #d41342;
+    background-color: getColor(primary);
+    color: getColor(decorative);
   }
 
   &-icon {
@@ -155,14 +155,14 @@
 
   &:hover,
   &:focus {
-    background-color: #ffa5ba;
+    background-color: getColor(decorative-secondary);
   }
 }
 
 @media screen and (min-width: 768px) {
   .contacts {
     height: 943px;
-    background-image: linear-gradient(to top, #fff5f6 750px, #ffffff 193px);
+    background-image: linear-gradient(to top, getColor(bg-primary) 750px, getColor(primary) 193px);
   }
 
   .contacts__grid {
@@ -269,7 +269,7 @@
     max-width: 100%;
     max-width: 1280px;
     height: 998px;
-    background-image: linear-gradient(to top, #fff5f6 765px, #ffffff 233px);
+    background-image: linear-gradient(to top, getColor(bg-primary) 765px, getColor(primary) 233px);
   }
 
   .contacts__grid {
