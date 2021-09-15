@@ -1752,12 +1752,10 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff5f6), to(#ffffff));
-  background-image: linear-gradient(to bottom, #fff5f6, #ffffff);
+  background-image: linear-gradient(to top, #ffffff 73px, #fff5f6 49px);
 }
 
 .gallery__image {
-  width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1766,12 +1764,14 @@ button {
 @media screen and (min-width: 768px) {
   .gallery {
     height: 264px;
+    background-image: linear-gradient(to top, #ffffff 158px, #fff5f6 106px);
   }
 }
 
 @media screen and (min-width: 1280px) {
   .gallery {
     height: 430px;
+    background-image: linear-gradient(to top, #ffffff 259px, #fff5f6 171px);
   }
 }
 
