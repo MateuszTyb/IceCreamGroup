@@ -807,6 +807,7 @@ button {
 }
 
 .products__card {
+  position: relative;
   min-height: 484px;
   max-width: 280px;
   display: -webkit-box;
@@ -867,8 +868,67 @@ button {
   background: white;
 }
 
-.products__card-btn {
-  padding-bottom: 41px;
+.products__card-btn--open {
+  background-image: url(/images/products/mobile/arrow-right.png);
+  background-color: unset;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  z-index: 3;
+}
+
+.products__card-btn--close {
+  display: none;
+  background-image: url(/images/products/mobile/arrow-right.png);
+  background-color: unset;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  z-index: 3;
+}
+
+#overlay1 {
+  display: none;
+  position: absolute;
+  height: 80%;
+  border-radius: 24px;
+  padding: 20px 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffb8ca;
+  z-index: 2;
+}
+
+#overlay2 {
+  display: none;
+  position: absolute;
+  height: 100%;
+  border-radius: 24px;
+  padding: 20px 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f0d1a5;
+  z-index: 2;
+}
+
+#overlay3 {
+  display: none;
+  position: absolute;
+  height: 80%;
+  border-radius: 24px;
+  padding: 20px 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #c2e297;
+  z-index: 2;
 }
 
 .products__card--dots::after {
@@ -909,14 +969,14 @@ button {
   content: url("/images/products/mobile/products1.png");
   position: absolute;
   bottom: 45px;
-  right: -60%;
+  left: calc(50% - 125px);
 }
 
 @media screen and (min-width: 768px) {
   .product--1::before {
     content: url("/images/products/tablet/products1.png");
     bottom: 45px;
-    right: -50%;
+    left: calc(50% - 110px);
   }
 }
 
@@ -924,7 +984,7 @@ button {
   .product--1::before {
     content: url("/images/products/desktop/products1.png");
     bottom: 45px;
-    right: -100%;
+    left: calc(50% - 167px);
   }
 }
 
@@ -932,14 +992,14 @@ button {
   content: url("/images/products/mobile/products2.png");
   position: absolute;
   bottom: 45px;
-  right: -40%;
+  left: calc(50% - 125px);
 }
 
 @media screen and (min-width: 768px) {
   .product--2::before {
     content: url("/images/products/tablet/products2.png");
     bottom: 45px;
-    right: -40%;
+    left: calc(50% - 110px);
   }
 }
 
@@ -947,7 +1007,7 @@ button {
   .product--2::before {
     content: url("/images/products/desktop/products2.png");
     bottom: 45px;
-    right: -90%;
+    left: calc(50% - 167px);
   }
 }
 
@@ -955,14 +1015,14 @@ button {
   content: url("/images/products/mobile/products3.png");
   position: absolute;
   bottom: 45px;
-  right: -30%;
+  left: calc(50% - 125px);
 }
 
 @media screen and (min-width: 768px) {
   .product--3::before {
     content: url("/images/products/tablet/products3.png");
     bottom: 45px;
-    right: -30%;
+    left: calc(50% - 110px);
   }
 }
 
@@ -970,7 +1030,7 @@ button {
   .product--3::before {
     content: url("/images/products/desktop/products3.png");
     bottom: 45px;
-    right: -70%;
+    left: calc(50% - 167px);
   }
 }
 
