@@ -1035,6 +1035,10 @@ button {
   background: white;
 }
 
+
+.products__card-btn {
+  padding-bottom: 41px;
+
 .products__card-btn--open {
   background-image: url(/images/products/mobile/arrow-right.png);
   background-color: unset;
@@ -1379,7 +1383,7 @@ button {
     background-image: url("/src/images/about/bg-desktop.png");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: 0 300px;
+    background-position: 0 350px;
   }
   .about__label {
     padding-top: 125px;
@@ -2206,7 +2210,7 @@ button {
 }
 
 .customer {
-  height: 622px;
+  height: 628px;
 }
 
 .customer__card-wrapper {
@@ -2276,8 +2280,8 @@ button {
 
 .customer__item-description--dots {
   position: relative;
-  width: 4px;
-  height: 4px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
   background: #d41443;
   margin-right: auto;
@@ -2290,8 +2294,8 @@ button {
   display: block;
   content: '';
   border-radius: 50%;
-  width: 4px;
-  height: 4px;
+  width: 5px;
+  height: 5px;
   background: #d41443;
 }
 
@@ -2301,8 +2305,8 @@ button {
   display: block;
   content: '';
   border-radius: 50%;
-  width: 4px;
-  height: 4px;
+  width: 5px;
+  height: 5px;
   background: #d41443;
 }
 
@@ -2335,7 +2339,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .customer {
-    height: 506px;
+    height: 510px;
   }
   .customer__card-wrapper {
     margin-top: 121px;
@@ -2366,7 +2370,7 @@ button {
 
 @media screen and (min-width: 1280px) {
   .customer {
-    height: 474px;
+    height: 484px;
   }
   .customer__card-wrapper {
     margin-top: 123px;
