@@ -2341,8 +2341,8 @@ button {
 }
 
 .contacts {
-  height: 1672px;
-  background-image: linear-gradient(to top, #fff5f6 1502px, #ffffff 170px);
+  height: 1599px;
+  background-image: linear-gradient(to top, #fff5f6 1429px, #ffffff 170px);
 }
 
 .contacts__grid {
@@ -2503,6 +2503,7 @@ button {
   color: #ffffff;
   margin-right: auto;
   margin-left: auto;
+  text-decoration: none;
 }
 
 .contacts__button--locations {
@@ -2524,8 +2525,8 @@ button {
 
 @media screen and (min-width: 768px) {
   .contacts {
-    height: 943px;
-    background-image: linear-gradient(to top, #fff5f6 750px, #ffffff 193px);
+    height: 852px;
+    background-image: linear-gradient(to top, #fff5f6 659px, #ffffff 193px);
   }
   .contacts__grid {
     -ms-grid-columns: 220px 220px 220px;
@@ -2620,8 +2621,8 @@ button {
   .contacts {
     max-width: 100%;
     max-width: 1280px;
-    height: 998px;
-    background-image: linear-gradient(to top, #fff5f6 765px, #ffffff 233px);
+    height: 901px;
+    background-image: linear-gradient(to top, #fff5f6 668px, #ffffff 233px);
   }
   .contacts__grid {
     -ms-grid-columns: 330px 330px 330px;
