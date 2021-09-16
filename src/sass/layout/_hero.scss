@@ -3,6 +3,7 @@
   width: auto;
   height: 440px;
   position: relative;
+  overflow: hidden;
   background-color: getColor(bg-secondary);
   padding: 20px;
   align-items: flex-start;
@@ -124,6 +125,7 @@
   &__decorator {
     z-index: 11;
     content: '';
+    overflow: hidden;
     position: absolute;
     width: 343px;
     height: 343px;

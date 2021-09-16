@@ -491,6 +491,7 @@ button {
   width: auto;
   height: 440px;
   position: relative;
+  overflow: hidden;
   background-color: #ffb8ca;
   padding: 20px;
   -webkit-box-align: start;
@@ -646,6 +647,7 @@ button {
 .hero__decorator {
   z-index: 11;
   content: '';
+  overflow: hidden;
   position: absolute;
   width: 343px;
   height: 343px;
@@ -972,6 +974,7 @@ button {
 }
 
 .products__card {
+  position: relative;
   min-height: 484px;
   max-width: 280px;
   display: -webkit-box;
@@ -1032,13 +1035,71 @@ button {
   background: white;
 }
 
+
 .products__card-btn {
+  padding-bottom: 41px;
+
+.products__card-btn--open {
   background-image: url(/images/products/mobile/arrow-right.png);
   background-color: unset;
   width: 40px;
   height: 40px;
   padding: 0;
   border: 0;
+  z-index: 3;
+}
+
+.products__card-btn--close {
+  display: none;
+  background-image: url(/images/products/mobile/arrow-right.png);
+  background-color: unset;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  z-index: 3;
+}
+
+#overlay1 {
+  display: none;
+  position: absolute;
+  height: 80%;
+  border-radius: 24px;
+  padding: 20px 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffb8ca;
+  z-index: 2;
+}
+
+#overlay2 {
+  display: none;
+  position: absolute;
+  height: 100%;
+  border-radius: 24px;
+  padding: 20px 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f0d1a5;
+  z-index: 2;
+}
+
+#overlay3 {
+  display: none;
+  position: absolute;
+  height: 80%;
+  border-radius: 24px;
+  padding: 20px 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #c2e297;
+  z-index: 2;
 }
 
 .products__card--dots::after {
@@ -1322,7 +1383,7 @@ button {
     background-image: url("/src/images/about/bg-desktop.png");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: 0 300px;
+    background-position: 0 350px;
   }
   .about__label {
     padding-top: 125px;
@@ -2149,7 +2210,7 @@ button {
 }
 
 .customer {
-  height: 622px;
+  height: 628px;
 }
 
 .customer__card-wrapper {
@@ -2219,8 +2280,8 @@ button {
 
 .customer__item-description--dots {
   position: relative;
-  width: 4px;
-  height: 4px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
   background: #d41443;
   margin-right: auto;
@@ -2233,8 +2294,8 @@ button {
   display: block;
   content: '';
   border-radius: 50%;
-  width: 4px;
-  height: 4px;
+  width: 5px;
+  height: 5px;
   background: #d41443;
 }
 
@@ -2244,8 +2305,8 @@ button {
   display: block;
   content: '';
   border-radius: 50%;
-  width: 4px;
-  height: 4px;
+  width: 5px;
+  height: 5px;
   background: #d41443;
 }
 
@@ -2278,7 +2339,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .customer {
-    height: 506px;
+    height: 510px;
   }
   .customer__card-wrapper {
     margin-top: 121px;
@@ -2309,7 +2370,7 @@ button {
 
 @media screen and (min-width: 1280px) {
   .customer {
-    height: 474px;
+    height: 484px;
   }
   .customer__card-wrapper {
     margin-top: 123px;
