@@ -104,7 +104,9 @@
 
     &__list {
       display: flex;
-      justify-content: right;
+      margin-left: auto;
+      margin-right: 0;
+      justify-content: flex-end;
       align-items: center;
       column-gap: 25px;
       margin-bottom: 46px;
