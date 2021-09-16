@@ -1,5 +1,5 @@
 .customer {
-  height: 622px;
+  height: 628px;
 }
 
 .customer__card-wrapper {
@@ -68,8 +68,8 @@
 
 .customer__item-description--dots {
   position: relative;
-  width: 4px;
-  height: 4px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
   background: getColor(decorative);
   margin-right: auto;
@@ -81,8 +81,8 @@
     display: block;
     content: '';
     border-radius: 50%;
-    width: 4px;
-    height: 4px;
+    width: 5px;
+    height: 5px;
     background: getColor(decorative);
   }
 
@@ -92,8 +92,8 @@
     display: block;
     content: '';
     border-radius: 50%;
-    width: 4px;
-    height: 4px;
+    width: 5px;
+    height: 5px;
     background: getColor(decorative);
   }
 }
@@ -122,7 +122,7 @@
 
 @media screen and (min-width: 768px) {
   .customer {
-    height: 506px;
+    height: 510px;
   }
 
   .customer__card-wrapper {
@@ -159,7 +159,7 @@
 
 @media screen and (min-width: 1280px) {
   .customer {
-    height: 474px;
+    height: 484px;
   }
 
   .customer__card-wrapper {
