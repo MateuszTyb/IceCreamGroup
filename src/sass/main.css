@@ -1035,10 +1035,6 @@ button {
   background: white;
 }
 
-
-.products__card-btn {
-  padding-bottom: 41px;
-
 .products__card-btn--open {
   background-image: url(/images/products/mobile/arrow-right.png);
   background-color: unset;
@@ -2214,6 +2210,7 @@ button {
 
 .customer {
   height: 628px;
+  max-width: 100%;
 }
 
 .customer__card-wrapper {
@@ -2374,6 +2371,7 @@ button {
 @media screen and (min-width: 1280px) {
   .customer {
     height: 484px;
+    max-width: 1280px;
   }
   .customer__card-wrapper {
     margin-top: 123px;
