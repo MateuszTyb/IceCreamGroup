@@ -972,6 +972,7 @@ button {
 }
 
 .products__card {
+  position: relative;
   min-height: 484px;
   max-width: 280px;
   display: -webkit-box;
@@ -1032,13 +1033,72 @@ button {
   background: white;
 }
 
-.products__card-btn {
+
+.products__card-btn--open {
+
+
   background-image: url(/images/products/mobile/arrow-right.png);
   background-color: unset;
   width: 40px;
   height: 40px;
   padding: 0;
   border: 0;
+
+  z-index: 3;
+}
+
+.products__card-btn--close {
+  display: none;
+  background-image: url(/images/products/mobile/arrow-right.png);
+  background-color: unset;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  z-index: 3;
+}
+
+#overlay1 {
+  display: none;
+  position: absolute;
+  height: 80%;
+  border-radius: 24px;
+  padding: 20px 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffb8ca;
+  z-index: 2;
+}
+
+#overlay2 {
+  display: none;
+  position: absolute;
+  height: 100%;
+  border-radius: 24px;
+  padding: 20px 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f0d1a5;
+  z-index: 2;
+}
+
+#overlay3 {
+  display: none;
+  position: absolute;
+  height: 80%;
+  border-radius: 24px;
+  padding: 20px 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #c2e297;
+  z-index: 2;
+
 }
 
 .products__card--dots::after {
