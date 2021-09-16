@@ -1,6 +1,6 @@
 .contacts {
-  height: 1672px;
-  background-image: linear-gradient(to top, getColor(bg-primary) 1502px, getColor(primary) 170px);
+  height: 1599px;
+  background-image: linear-gradient(to top, getColor(bg-primary) 1429px, getColor(primary) 170px);
 }
 
 .contacts__grid {
@@ -139,6 +139,7 @@
   color: getColor(primary);
   margin-right: auto;
   margin-left: auto;
+  text-decoration: none;
 
   &--locations {
     margin-bottom: 10px;
@@ -161,8 +162,8 @@
 
 @media screen and (min-width: 768px) {
   .contacts {
-    height: 943px;
-    background-image: linear-gradient(to top, getColor(bg-primary) 750px, getColor(primary) 193px);
+    height: 852px;
+    background-image: linear-gradient(to top, getColor(bg-primary) 659px, getColor(primary) 193px);
   }
 
   .contacts__grid {
@@ -268,8 +269,8 @@
   .contacts {
     max-width: 100%;
     max-width: 1280px;
-    height: 998px;
-    background-image: linear-gradient(to top, getColor(bg-primary) 765px, getColor(primary) 233px);
+    height: 901px;
+    background-image: linear-gradient(to top, getColor(bg-primary) 668px, getColor(primary) 233px);
   }
 
   .contacts__grid {
