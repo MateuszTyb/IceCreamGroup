@@ -3,9 +3,16 @@
 @import './base/base';
 @import './base/reset';
 
+@import './base/animations';
+
+
 @import './layout/header';
 @import './layout/hero';
 @import './layout/products';
 @import './layout/about';
+@import './layout/advantages';
 @import './layout/modal';
 @import './layout/gallery';
+@import './layout/footer';
+@import './layout/customer-reviews';
+@import './layout/contacts';
