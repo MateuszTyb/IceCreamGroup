@@ -2031,6 +2031,9 @@ button {
           flex-direction: row;
   text-align: right;
   margin-left: auto;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 @media screen and (min-width: 1280px) {
@@ -2207,6 +2210,7 @@ button {
 
 .customer {
   height: 628px;
+  max-width: 100%;
 }
 
 .customer__card-wrapper {
@@ -2367,6 +2371,7 @@ button {
 @media screen and (min-width: 1280px) {
   .customer {
     height: 484px;
+    max-width: 1280px;
   }
   .customer__card-wrapper {
     margin-top: 123px;
