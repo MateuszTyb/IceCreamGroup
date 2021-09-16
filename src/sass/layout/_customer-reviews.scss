@@ -1,5 +1,6 @@
 .customer {
   height: 628px;
+  max-width: 100%;
 }
 
 .customer__card-wrapper {
@@ -160,6 +161,7 @@
 @media screen and (min-width: 1280px) {
   .customer {
     height: 484px;
+    max-width: 1280px;
   }
 
   .customer__card-wrapper {
