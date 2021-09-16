@@ -491,6 +491,7 @@ button {
   width: auto;
   height: 440px;
   position: relative;
+  overflow: hidden;
   background-color: #ffb8ca;
   padding: 20px;
   -webkit-box-align: start;
@@ -646,6 +647,7 @@ button {
 .hero__decorator {
   z-index: 11;
   content: '';
+  overflow: hidden;
   position: absolute;
   width: 343px;
   height: 343px;
@@ -1033,17 +1035,13 @@ button {
   background: white;
 }
 
-
 .products__card-btn--open {
-
-
   background-image: url(/images/products/mobile/arrow-right.png);
   background-color: unset;
   width: 40px;
   height: 40px;
   padding: 0;
   border: 0;
-
   z-index: 3;
 }
 
@@ -1098,7 +1096,6 @@ button {
   bottom: 0;
   background-color: #c2e297;
   z-index: 2;
-
 }
 
 .products__card--dots::after {
