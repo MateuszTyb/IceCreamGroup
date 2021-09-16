@@ -1,4 +1,5 @@
 .contacts {
+  max-width: 100%;
   height: 1599px;
   background-image: linear-gradient(to top, getColor(bg-primary) 1429px, getColor(primary) 170px);
 }
@@ -269,7 +270,6 @@
 
 @media screen and (min-width: 1280px) {
   .contacts {
-    max-width: 100%;
     max-width: 1280px;
     height: 901px;
     background-image: linear-gradient(to top, getColor(bg-primary) 668px, getColor(primary) 233px);
