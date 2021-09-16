@@ -73,7 +73,6 @@
     flex-direction: row;
     text-align: right;
     margin-left: auto;
-    justify-content: flex-end;
 
     @media screen and (min-width: 1280px) {
       display: block;
@@ -105,6 +104,8 @@
 
     &__list {
       display: flex;
+      margin-left: auto;
+      margin-right: 0;
       justify-content: right;
       align-items: center;
       column-gap: 25px;
