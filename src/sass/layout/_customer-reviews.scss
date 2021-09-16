@@ -1,4 +1,8 @@
 .customer {
+  height: 622px;
+}
+
+.customer__card-wrapper {
   margin-top: 80px;
 }
 
@@ -117,6 +121,14 @@
 }
 
 @media screen and (min-width: 768px) {
+  .customer {
+    height: 506px;
+  }
+
+  .customer__card-wrapper {
+    margin-top: 121px;
+  }
+
   .customer__item {
     margin-top: 19px;
     margin-bottom: 24px;
@@ -146,6 +158,14 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .customer {
+    height: 474px;
+  }
+
+  .customer__card-wrapper {
+    margin-top: 123px;
+  }
+
   .customer__item {
     margin-top: 15px;
     margin-bottom: 15px;

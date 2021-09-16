@@ -780,7 +780,7 @@ button {
 
 @media screen and (min-width: 1280px) {
   .hero__locals-list {
-    margin-top: 77px;
+    margin-top: 60px;
   }
 }
 
@@ -793,7 +793,13 @@ button {
 
 @media screen and (min-width: 768px) {
   .hero__locals-item {
-    margin-bottom: 38px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero__locals-item {
+    margin-bottom: 15px;
   }
 }
 
@@ -1027,7 +1033,12 @@ button {
 }
 
 .products__card-btn {
-  padding-bottom: 41px;
+  background-image: url(/images/products/mobile/arrow-right.png);
+  background-color: unset;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 0;
 }
 
 .products__card--dots::after {
@@ -1068,14 +1079,14 @@ button {
   content: url("/images/products/mobile/products1.png");
   position: absolute;
   bottom: 45px;
-  right: -60%;
+  left: calc(50% - 125px);
 }
 
 @media screen and (min-width: 768px) {
   .product--1::before {
     content: url("/images/products/tablet/products1.png");
     bottom: 45px;
-    right: -50%;
+    left: calc(50% - 110px);
   }
 }
 
@@ -1083,7 +1094,7 @@ button {
   .product--1::before {
     content: url("/images/products/desktop/products1.png");
     bottom: 45px;
-    right: -100%;
+    left: calc(50% - 167px);
   }
 }
 
@@ -1091,14 +1102,14 @@ button {
   content: url("/images/products/mobile/products2.png");
   position: absolute;
   bottom: 45px;
-  right: -40%;
+  left: calc(50% - 125px);
 }
 
 @media screen and (min-width: 768px) {
   .product--2::before {
     content: url("/images/products/tablet/products2.png");
     bottom: 45px;
-    right: -40%;
+    left: calc(50% - 110px);
   }
 }
 
@@ -1106,7 +1117,7 @@ button {
   .product--2::before {
     content: url("/images/products/desktop/products2.png");
     bottom: 45px;
-    right: -90%;
+    left: calc(50% - 167px);
   }
 }
 
@@ -1114,14 +1125,14 @@ button {
   content: url("/images/products/mobile/products3.png");
   position: absolute;
   bottom: 45px;
-  right: -30%;
+  left: calc(50% - 125px);
 }
 
 @media screen and (min-width: 768px) {
   .product--3::before {
     content: url("/images/products/tablet/products3.png");
     bottom: 45px;
-    right: -30%;
+    left: calc(50% - 110px);
   }
 }
 
@@ -1129,7 +1140,7 @@ button {
   .product--3::before {
     content: url("/images/products/desktop/products3.png");
     bottom: 45px;
-    right: -70%;
+    left: calc(50% - 167px);
   }
 }
 
@@ -2138,6 +2149,10 @@ button {
 }
 
 .customer {
+  height: 622px;
+}
+
+.customer__card-wrapper {
   margin-top: 80px;
 }
 
@@ -2262,6 +2277,12 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+  .customer {
+    height: 506px;
+  }
+  .customer__card-wrapper {
+    margin-top: 121px;
+  }
   .customer__item {
     margin-top: 19px;
     margin-bottom: 24px;
@@ -2287,6 +2308,12 @@ button {
 }
 
 @media screen and (min-width: 1280px) {
+  .customer {
+    height: 474px;
+  }
+  .customer__card-wrapper {
+    margin-top: 123px;
+  }
   .customer__item {
     margin-top: 15px;
     margin-bottom: 15px;
