@@ -1,29 +1,29 @@
-<header class="header" id="header"  mybutton> 
+<header class="header" id="header" mybutton>
 
-<script>
-  
+  <script>
 
-mybutton = document.getElementById("topBtn");
-window.onscroll = function () { scrollFunction() };
 
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton = document.getElementById("topBtn");
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         mybutton.style.display = "block";
-    } else {
+      } else {
         mybutton.style.display = "none";
+      }
     }
-}
 
 
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
 
 
-</script>
+  </script>
 
-  <button onclick="topFunction()" id="topBtn">Top</button> 
+  <button onclick="topFunction()" id="topBtn">Top</button>
   <a class="header__logo" href="index.html"><img class="header__logo-img" src="/src/images/header-hero/logo.png"
       alt="" /></a>
   <nav class="header-nav">
@@ -31,7 +31,7 @@ function topFunction() {
       <li class="header-nav__item"><a class="header-nav__link" href="#header">Home</a></li>
       <li class="header-nav__item"><a class="header-nav__link" href="#customer">About us</a></li>
       <li class="header-nav__item"><a class="header-nav__link" href="#about">How it’s made?</a></li>
-      <li class="header-nav__item"><a class="header-nav__link" href="#products">Our products</a></li>
+      <li class="header-nav__item"><a class="header-nav__link" href="#prod">Our products</a></li>
       <li class="header-nav__item"><a class="header-nav__link" href="#contacts">Contact</a></li>
     </ul>
   </nav>
@@ -52,12 +52,12 @@ function topFunction() {
       Buy now <img class="header__btn-icon" src="./images/header-icons/btn-vector.svg" />
     </button>
     <ul class="header-mobile__list">
-      <li class="header-mobile__item"><a  class="header-mobile__link" href="#header">Home</a></li>
+      <li class="header-mobile__item"><a class="header-mobile__link" href="#header">Home</a></li>
       <li class="header-mobile__item"><a class="header-mobile__link" href="#customer">About us</a></li>
       <li class="header-mobile__item">
         <a class="header-mobile__link" href="#about">How it’s made?</a>
       </li>
-      <li class="header-mobile__item"><a class="header-mobile__link" href="#products">Our products</a></li>
+      <li class="header-mobile__item"><a class="header-mobile__link" href="#prod">Our products</a></li>
       <li class="header-mobile__item"><a class="header-mobile__link" href="#contacts">Contact</a></li>
     </ul>
   </nav>
@@ -66,7 +66,7 @@ function topFunction() {
   <div class="hero__main">
     <h1 class="hero__title">ICE CREAM <br> made WITH <br> <span class="hero__title-span">PASSION</span></h1>
     <div class="hero__buttons">
-      <button class="hero__btn product-btn" onclick="location.href='#products'" type="button">Products</button>
+      <button class="hero__btn product-btn" onclick="location.href='#prod'" type="button">Products</button>
       <button class="hero__btn made-btn" onclick="location.href='#about'" type="button">How it’s made?</button>
     </div>
   </div>
@@ -104,15 +104,15 @@ function topFunction() {
     <img src="/src/images/header-hero/hero-girl-tablet.png" alt="IceCream"
       srcset="/src/images/header-hero/hero-girl-tablet@2x.png 2x" />
   </picture>
-    <ul class="hero__locals-list" >
-      <li class="hero__locals-item">
-        <h3 class="hero__locals-header">16</h3>
-        <p class="hero__locals-subscribe">cafes</p>
-      </li>
-      <li class="hero__locals-item">
-        <h3 class="hero__locals-header">23</h3>
-        <p class="hero__locals-subscribe">food trucks</p>
-      </li>
-    </ul>
- 
+  <ul class="hero__locals-list">
+    <li class="hero__locals-item">
+      <h3 class="hero__locals-header">16</h3>
+      <p class="hero__locals-subscribe">cafes</p>
+    </li>
+    <li class="hero__locals-item">
+      <h3 class="hero__locals-header">23</h3>
+      <p class="hero__locals-subscribe">food trucks</p>
+    </li>
+  </ul>
+
 </section>
