@@ -6,7 +6,7 @@ function on1() {
 
 function off1() {
   document.getElementById('overlay1').style.display = 'none';
-  document.getElementById('on').style.display = 'block';
+  document.getElementById('on1').style.display = 'block';
   document.getElementById('off').style.display = 'none';
 }
 function on2() {
