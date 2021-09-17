@@ -14,7 +14,60 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
     rel="stylesheet">
   <title>Ice cream made with passion</title>
+ <script>
 
+  mybutton = document.getElementById("topBtn");
+  window.onscroll = function () { scrollFunction() };
+  
+  function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+      } else {
+          mybutton.style.display = "none";
+      }
+  }
+  
+  
+  function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+  }
+  
+  </script>
+  <script>function on1() {
+    document.getElementById('overlay1').style.display = 'block';
+    document.getElementById('on1').style.display = 'none';
+    document.getElementById('off1').style.display = 'block';
+  }
+  
+  function off1() {
+    document.getElementById('overlay1').style.display = 'none';
+    document.getElementById('on').style.display = 'block';
+    document.getElementById('off').style.display = 'none';
+  }
+  function on2() {
+    document.getElementById('overlay2').style.display = 'block';
+    document.getElementById('on2').style.display = 'none';
+    document.getElementById('off2').style.display = 'block';
+  }
+  
+  function off2() {
+    document.getElementById('overlay2').style.display = 'none';
+    document.getElementById('on2').style.display = 'block';
+    document.getElementById('off2').style.display = 'none';
+  }
+  function on3() {
+    document.getElementById('overlay3').style.display = 'block';
+    document.getElementById('on3').style.display = 'none';
+    document.getElementById('off3').style.display = 'block';
+  }
+  
+  function off3() {
+    document.getElementById('overlay3').style.display = 'none';
+    document.getElementById('on3').style.display = 'block';
+    document.getElementById('off3').style.display = 'none';
+  }
+  </script>
 </head>
 
 <body>
@@ -37,9 +90,11 @@
   <include src="./partials/footer.html"></include>
 
   <script src="./index.js"></script>
+  <script src="./top.js" defer></script>  
   <script src="./menu.js"></script>
   <script src="./modal.js"></script>
   <script src="./products.js"></script>
+ 
 </body>
 
 </html>

@@ -484,6 +484,29 @@ button {
   row-gap: 22px;
 }
 
+#topBtn {
+  font-family: var(--secondary-font);
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 999;
+  border: none;
+  outline: none;
+  background-color: #d41443;
+  opacity: 0.2;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#topBtn:hover {
+  background-color: #e17992;
+  opacity: 1;
+}
+
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -505,6 +528,7 @@ button {
 @media screen and (min-width: 768px) {
   .hero {
     height: 306px;
+    overflow: visible;
     padding: 11px 42px 0px 34px;
   }
 }
@@ -2031,9 +2055,6 @@ button {
           flex-direction: row;
   text-align: right;
   margin-left: auto;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
 }
 
 @media screen and (min-width: 1280px) {
@@ -2080,9 +2101,11 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  margin-left: auto;
+  margin-right: 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
