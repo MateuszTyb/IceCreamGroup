@@ -931,6 +931,7 @@ button {
 .products__sidetitle {
   color: #ffa5ba;
   font-family: var(--secondary-font);
+  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -941,6 +942,7 @@ button {
 .products__title {
   color: #d41443;
   font-family: var(--secondary-font);
+  font-weight: 400;
   font-size: 34px;
   line-height: 39px;
   text-align: center;
@@ -1029,6 +1031,7 @@ button {
   padding-top: 161px;
   color: #ffffff;
   font-family: var(--secondary-font);
+  font-weight: 400;
   font-size: 20px;
   line-height: 23px;
   text-align: center;

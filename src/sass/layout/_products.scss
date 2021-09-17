@@ -24,6 +24,7 @@
   &__sidetitle {
     color: getColor(decorative-secondary);
     font-family: var(--secondary-font);
+    font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     text-align: center;
@@ -34,6 +35,7 @@
   &__title {
     color: getColor(decorative);
     font-family: var(--secondary-font);
+    font-weight: 400;
     font-size: 34px;
     line-height: 39px;
     text-align: center;
@@ -95,6 +97,7 @@
     padding-top: 161px;
     color: getColor(primary);
     font-family: var(--secondary-font);
+    font-weight: 400;
     font-size: 20px;
     line-height: 23px;
     text-align: center;
