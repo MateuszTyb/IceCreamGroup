@@ -3,7 +3,7 @@
 background-color: getColor(bg-primary);
 width: 100%;
 max-width: 1280px;
-min-width: 320px;
+min-width: 280px;
 margin: 0 auto;
 
 
@@ -11,7 +11,7 @@ margin: 0 auto;
 &__container{
     display: flex;
     flex-direction: column;
-    
+
 }
 
 &__label{
@@ -97,7 +97,7 @@ background-color: getColor(button-hover);
 
 @media screen and (max-width: 767px) {
     .about{
-        background-image: 
+        background-image:
         url("/src/images/about/bg-mobile.png");
         background-repeat: no-repeat;
         background-size: contain;
@@ -169,12 +169,12 @@ background-color: getColor(button-hover);
 
     @media screen and (min-width: 1280px) {
     .about{
-    background-image: 
+    background-image:
     url("/src/images/about/bg-desktop.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 0 350px;
-    
+
         &__label{
         padding-top: 125px;
         font-size: 30px;
@@ -198,7 +198,7 @@ background-color: getColor(button-hover);
 
         &__description{
        font-size: 16px;
-       line-height: 1.75; 
+       line-height: 1.75;
        letter-spacing: 0.04em;
        margin-top: 106px;
        margin-bottom: 35px;
