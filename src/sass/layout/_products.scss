@@ -44,10 +44,12 @@
 
     @media screen and (min-width: 768px) {
       margin-bottom: 150px;
+      font-weight: 400;
     }
 
     @media screen and (min-width: 1280px) {
       margin-bottom: 259px;
+      font-weight: 400;
     }
   }
 
@@ -105,6 +107,7 @@
 
     @media screen and (min-width: 768px) {
       padding-top: 151px;
+      font-weight: 400;
     }
   }
 
@@ -159,8 +162,8 @@
   background-color: getColor(bg-secondary);
   z-index: 2;
   color: getColor(primary);
-    font-weight: bold;
-    font-size: 14px;
+  font-weight: bold;
+  font-size: 14px;
 }
 #overlay2 {
   display: none;
@@ -175,8 +178,8 @@
   background-color: getColor(accent-color-first);
   z-index: 2;
   color: getColor(primary);
-    font-weight: bold;
-    font-size: 14px;
+  font-weight: bold;
+  font-size: 14px;
 }
 #overlay3 {
   display: none;
@@ -191,8 +194,8 @@
   background-color: getColor(accent-color-second);
   z-index: 2;
   color: getColor(primary);
-    font-weight: bold;
-    font-size: 14px;
+  font-weight: bold;
+  font-size: 14px;
 }
 .products__card--dots::after {
   position: absolute;
