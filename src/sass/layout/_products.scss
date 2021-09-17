@@ -31,6 +31,11 @@
     text-transform: uppercase;
     padding-top: 121px;
     margin-bottom: 15px;
+
+     @media screen and (min-width: 1280px) {
+      font-size: 30px;
+      line-height: 1.333;
+  }
   }
 
   &__title {
@@ -51,6 +56,8 @@
     @media screen and (min-width: 1280px) {
       margin-bottom: 259px;
       font-weight: 400;
+      font-size: 58px;
+
     }
   }
 
