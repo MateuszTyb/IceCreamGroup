@@ -1095,6 +1095,9 @@ button {
   bottom: 0;
   background-color: #ffb8ca;
   z-index: 2;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 #overlay2 {
@@ -1109,6 +1112,9 @@ button {
   bottom: 0;
   background-color: #f0d1a5;
   z-index: 2;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 #overlay3 {
@@ -1123,6 +1129,9 @@ button {
   bottom: 0;
   background-color: #c2e297;
   z-index: 2;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .products__card--dots::after {
